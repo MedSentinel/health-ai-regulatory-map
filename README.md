@@ -49,9 +49,17 @@ It is especially useful for topics such as:
 
 - [glossary.md](./glossary.md): working definitions for recurring health AI regulatory terms
 - [frameworks/comparison.md](./frameworks/comparison.md): a quick comparison of the main lenses in this repository
+- [product-types.md](./product-types.md): a quick starting map for common health AI product types
+- [review-questions.md](./review-questions.md): practical questions for reviewing claims, launches, and product narratives
+- [evidence-signals.md](./evidence-signals.md): a compact map of what kinds of evidence signals are stronger, weaker, or incomplete
+- [claim-language.md](./claim-language.md): how to read slippery product language more carefully
+- [example-cases/README.md](./example-cases/README.md): short case studies showing how to use this repository on real product narratives
 - [frameworks/fda.md](./frameworks/fda.md): the FDA lens and the questions it raises
 - [frameworks/mhra.md](./frameworks/mhra.md): the MHRA lens and UK-facing questions
 - [frameworks/eu-mdr-samd.md](./frameworks/eu-mdr-samd.md): EU MDR and SaMD-oriented framing
+- [standards/iso-14971.md](./standards/iso-14971.md): why risk management matters in health AI discussions
+- [standards/iso-42001.md](./standards/iso-42001.md): what AI management system language does and does not mean
+- [standards/gmlp.md](./standards/gmlp.md): a compact note on Good Machine Learning Practice style thinking
 - [boundaries/clinical-decision-support.md](./boundaries/clinical-decision-support.md): where clinical decision support becomes a harder regulatory question
 - [boundaries/medical-advice-boundary.md](./boundaries/medical-advice-boundary.md): why medical advice boundaries matter for patient-facing AI
 
@@ -91,7 +99,9 @@ If you are not sure where to start, begin with:
 
 1. [frameworks/comparison.md](./frameworks/comparison.md)
 2. [glossary.md](./glossary.md)
-3. the most relevant boundary note for the product claim
+3. [product-types.md](./product-types.md)
+4. [claim-language.md](./claim-language.md)
+5. the most relevant boundary or standards note for the product claim
 
 ## Design principles
 
@@ -99,6 +109,18 @@ If you are not sure where to start, begin with:
 - distinguish marketing language from regulatory language
 - separate product usefulness from regulatory status
 - keep safety, intended use, and human oversight central
+
+## What makes this useful
+
+This repository is most useful when a launch, paper, or company claim sounds more mature than the visible evidence behind it.
+
+It is built to help readers slow down and ask:
+
+- what exactly is being claimed
+- what kind of evidence is visible
+- what kind of risk is being created
+- which regulatory or standards lens is actually relevant
+- what remains unknown even after the public announcement
 
 ## What this repository does not do
 
@@ -111,7 +133,7 @@ It does not:
 
 ## Version
 
-Current version: `v0.1`
+Current version: `v0.2`
 
 The first version is intentionally compact.
 It is meant to be readable, extensible, and safe to reference in public discussion.

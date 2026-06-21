@@ -1,6 +1,6 @@
 # Framework Comparison
 
-Version: `v0.1`
+Version: `v0.2`
 
 This page is a compact comparison aid.
 
@@ -17,11 +17,69 @@ It helps you understand what kinds of questions each lens tends to foreground.
 | Clinical Decision Support boundary | How much does the system shape the path to a clinical decision? | support vs influence, prioritization, nudging, action-shaping | focusing only on whether the system gives the final answer |
 | Medical Advice boundary | Will a user experience this as advice rather than information? | patient-facing guidance, reassurance, urgency, actionability | relying on disclaimers as if they solve the safety problem |
 
+## Decision table
+
+| If the public claim sounds like this | Start with | Why |
+| --- | --- | --- |
+| "Helps detect, screen, diagnose, or predict" | FDA, EU MDR / SaMD | medical-use language is already close to device-style scrutiny |
+| "Supports clinicians without replacing them" | Clinical Decision Support boundary, FDA | support language often hides meaningful clinical influence |
+| "Patient-centered guidance" or "personalized health support" | Medical Advice boundary, FDA | personalization can drift into advice even without explicit diagnosis claims |
+| "Safer, more accurate, clinically proven" | Evidence Signals, ISO 14971, FDA | safety and accuracy claims need evidence and risk context |
+| "Governed, responsible, enterprise-ready AI" | ISO/IEC 42001, Evidence Signals | governance language may be strong while product evidence remains weak |
+| "Sandbox, pilot, innovation program, real-world testing" | MHRA, Evidence Signals | innovation framing is not the same thing as readiness |
+
+## Lens selection by question
+
+| Your question | Primary lens | Secondary lens |
+| --- | --- | --- |
+| Is this product making a medical claim? | FDA | EU MDR / SaMD |
+| Is this still support, or is it shaping care? | Clinical Decision Support boundary | FDA |
+| Will a patient experience this as advice? | Medical Advice boundary | FDA |
+| Is this company using regulation language too loosely? | FDA or EU MDR / SaMD | Claim Language |
+| Is this launch evidence-light but rhetorically strong? | Evidence Signals | Review Questions |
+| Is this UK innovation framing ahead of actual evidence? | MHRA | Evidence Signals |
+
+## What each lens tends to miss
+
+| Lens | What it tends to miss if used alone |
+| --- | --- |
+| FDA | workflow burden, organizational readiness, subtle user over-reliance |
+| MHRA | product-specific maturity hidden beneath innovation language |
+| EU MDR / SaMD | patient-perception issues in consumer-facing tools |
+| Clinical Decision Support boundary | broader governance claims and evidence maturity |
+| Medical Advice boundary | clinician-side workflow consequences |
+
+## Public-language triggers
+
+These phrases are not conclusions, but they are good reasons to slow down:
+
+- patient-centered
+- clinically proven
+- FDA-cleared
+- real-world validated
+- decision support only
+- not intended to diagnose
+- responsible AI
+- enterprise-grade governance
+- breakthrough
+- whole-body imaging
+
+Use those phrases as prompts to ask:
+
+- what exactly is being claimed
+- for whom
+- under what evidence conditions
+- with what remaining uncertainty
+
 ## How to use this page
 
 Start here when you have a product, launch, paper, or public claim and need a first-pass orientation.
 
 Then move to the more specific note that matches the question you are trying to answer.
+
+If the product language itself feels slippery, read:
+
+- [../claim-language.md](../claim-language.md)
 
 ## Example usage
 
@@ -57,3 +115,16 @@ Start with:
 Why:
 
 The key issue is often whether the public announcement is describing experimental innovation infrastructure, real deployment readiness, or something in between.
+
+### Example 4: "Patient-centered" ambient scribe claim
+
+Start with:
+
+- [../claim-language.md](../claim-language.md)
+- [../boundaries/clinical-decision-support.md](../boundaries/clinical-decision-support.md)
+- [../review-questions.md](../review-questions.md)
+
+Why:
+
+The main issue may not be pure model performance.
+It may be whether efficiency language is being quietly reframed as patient benefit.
