@@ -67,15 +67,22 @@ It is especially useful for topics such as:
 
 ```mermaid
 flowchart TD
-    A["Health AI product or claim"] --> B["What is the intended use?"]
-    B --> C["Does it shape diagnosis, screening, triage, monitoring, or treatment?"]
-    C --> D["Which lens matters most?"]
-    D --> E["FDA"]
-    D --> F["MHRA"]
-    D --> G["EU MDR / SaMD"]
-    C --> H["Boundary questions"]
-    H --> I["Clinical decision support"]
-    H --> J["Medical advice boundary"]
+    A["Health AI Public Narrative"] --> B["What is actually being presented?"]
+    B --> C["Medical use?"]
+    B --> D["Patient-facing guidance?"]
+    B --> E["Clinical influence?"]
+    B --> F["Evidence maturity?"]
+    C --> G["FDA"]
+    C --> H["EU MDR / SaMD"]
+    D --> I["Medical Advice Boundary"]
+    E --> J["Clinical Decision Support Boundary"]
+    F --> K["Evidence Signals"]
+    B --> L["Read the language carefully"]
+    L --> M["Patient-centered"]
+    L --> N["Clinically proven"]
+    L --> O["Responsible AI"]
+    B --> P["UK innovation or sandbox signal?"]
+    P --> Q["MHRA"]
 ```
 
 This repository is built to answer two kinds of questions:
